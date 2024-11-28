@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotina Gamificada</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Tela de Login/Cadastro -->
+        <div id="login-screen">
+            <h1>Bem-vindo!</h1>
+            <form id="login-form">
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Senha" required>
+                <button type="submit">Entrar</button>
+            </form>
+            <button id="register-btn">Cadastrar</button>
+        </div>
+
+        <!-- Painel de Tarefas -->
+        <div id="task-screen" style="display: none;">
+            <h1>Olá, <span id="username"></span>!</h1>
+            <div id="task-list">
+                <!-- Lista de tarefas carregada dinamicamente -->
+            </div>
+            <h2>Total de Migux: <span id="points">0</span></h2>
+            <button id="logout-btn">Sair</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
